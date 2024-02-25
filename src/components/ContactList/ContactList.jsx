@@ -1,10 +1,8 @@
 import ContactListItem from 'components/ContactListItem/ContactListItemItem';
-
-const ContactList = props => {
-  const { getFilteredContacts, deleteContact } = props;
+const ContactList = ({ filteredContacts, deleteContact }) => {
   return (
     <ul>
-      {getFilteredContacts().map(contact => (
+      {filteredContacts().map(contact => (
         <ContactListItem
           key={contact.id}
           contact={contact}

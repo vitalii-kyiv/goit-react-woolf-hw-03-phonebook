@@ -79,7 +79,7 @@ class App extends Component {
           <h2>Contacts</h2>
           <Filter changeFilter={this.changeFilter} filter={this.state.filter} />
           <ContactList
-            getFilteredContacts={this.getFilteredContacts}
+            filteredContacts={this.getFilteredContacts}
             deleteContact={this.deleteContact}
           />
         </div>

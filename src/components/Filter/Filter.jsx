@@ -1,5 +1,4 @@
-const Filter = props => {
-  const { changeFilter, filter } = props;
+const Filter = ({ changeFilter, filter }) => {
   return (
     <label>
       Find contacts by name

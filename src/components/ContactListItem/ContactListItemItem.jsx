@@ -1,5 +1,4 @@
-const ContactListItem = props => {
-  const { contact, deleteContact } = props;
+const ContactListItem = ({ contact, deleteContact }) => {
   return (
     <li>
       <p>
